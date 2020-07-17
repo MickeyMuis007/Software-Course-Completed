@@ -1,0 +1,82 @@
+/* See comments at the bottom for changes to try. */
+
+.sandbox {
+  background-color: lightblue;
+  padding: 20px;
+}
+
+.sandbox > * {
+  background-color: white;
+  padding: 20px;
+}
+
+img {
+  width: 100%;
+}
+
+header {
+}
+
+aside {
+}
+
+main {
+}
+
+.carl {
+}
+
+.pbd {
+}
+
+footer {
+}
+
+/*
+
+.sandbox {
+  display: grid;
+  grid-gap: 20px;
+  grid-template:
+    " header header header "
+    " aside  main   carl   "
+    " aside  main   pbd    "
+    " footer footer footer "
+    / 200px  2fr    1fr
+  ;
+
+  background-color: lightblue;
+  padding: 20px;
+}
+
+@media (max-width: 600px) {
+
+  .sandbox {
+    grid-template:
+      " carl   "
+      " header "
+      " aside  "
+      " main   "
+      " pbd    "
+      " footer "
+    ;
+  }
+}
+
+.sandbox > * {
+  background-color: white;
+  padding: 20px;
+}
+
+img {
+  width: 100%;
+}
+
+header { grid-area: header; }
+aside  { grid-area: aside;  }
+main   { grid-area: main;   }
+.carl  { grid-area: carl;   }
+.pbd   { grid-area: pbd;    }
+footer { grid-area: footer; }
+
+*/

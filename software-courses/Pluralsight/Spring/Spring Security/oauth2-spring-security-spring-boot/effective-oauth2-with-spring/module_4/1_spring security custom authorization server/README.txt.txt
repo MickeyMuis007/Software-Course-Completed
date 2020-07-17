@@ -1,0 +1,1 @@
+You will need up get a client id and secret from google and update the application.yml file.
