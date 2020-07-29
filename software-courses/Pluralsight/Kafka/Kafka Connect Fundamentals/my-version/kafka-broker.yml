@@ -1,0 +1,44 @@
+version: '3.7'
+
+networks:
+  corp:
+    driver: bridge
+
+services:
+  # db:
+  #   container_name: globalmantics-db
+  #   image: mysql
+  #   environment:
+  #     MYSQL_ROOT_PASSWORD: sha256_password
+  #     MYSQL_DATABASE: globalmantics-db
+  #     MYSQL_USER: mike
+  #     MYSQL_PASSWORD: sha256_password
+  #   volumes:
+  #     - ''
+  # mysql-cli:
+  #   container_name: mysql-cli
+  #   image: mysql
+  # zookeeper:
+  #   container_name: zookeeper
+  #   image: zookeeper:3.5.5
+  #   ports:
+  #     - '2181:2181'
+  #     - '2888:2888'
+  #     - '3888:3888'
+  #   networks:
+  #     - corp
+  kafka-broker:
+    container_name: kafka-broker
+    image: debezium/kafka:1.0
+    ports:
+      - '9092:9092'
+    # networks:
+    #   - corp
+    links:
+      - zookeeper
+    # depends_on:
+    #   - zookeeper
+  # kafka-connect:
+  #   container_name: kafka-connect
+  #   image: kafka-connect
+  
