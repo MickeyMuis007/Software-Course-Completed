@@ -1,0 +1,8 @@
+Kafka as a Platform:
+
+    Description:
+        - This was a YouTube course explaining the ecosystem of kafka from the ground Up. 
+        - This Presented by Robin Moffatt
+
+    References:
+        - https://www.youtube.com/watch?v=xy6jNKI3tKU
